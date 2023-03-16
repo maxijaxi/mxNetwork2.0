@@ -1,0 +1,165 @@
+.updates {
+    color: #fff;
+    margin-top: 0.8rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+.updates .pointer {
+    cursor: pointer;
+    user-select: none;
+    display: flex;
+    align-items: center;
+}
+
+.updates section {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.updates section .table-head {
+    display: flex;
+    justify-content: space-between;
+}
+
+.updates input {
+    float: right;
+    width: clamp(8rem, 20rem);
+    height: 2rem;
+    margin-bottom: 0.6rem;
+    border: 2px solid #8e4dea;
+    border-radius: 4px;
+    background-color: #343434;
+    color: #fff;
+}
+
+.updates input:focus {
+    outline: none;
+}
+
+.updates h2 {
+    font-size: 2rem;
+    margin-bottom: 0.6rem;
+}
+
+.updates h3 {
+    font-size: 1.2rem;
+}
+
+.updates h4 {
+    font-size: 1rem;
+}
+
+.updates p {
+    font-size: 1rem;
+}
+
+.updates table {
+    table-layout: fixed;
+    border-collapse: collapse;
+    width: 100%;
+    word-wrap: break-word;
+}
+
+.updates thead {
+    cursor: default;
+}
+
+.updates thead h4,
+i {
+    user-select: none;
+}
+
+.updates th {
+    text-align: left;
+    padding-left: 1%;
+    column-span: 3;
+    background-color: #1a1a1a;
+    color: #8e4dea;
+}
+
+.updates th:last-child {
+    width: 4rem;
+}
+
+
+.updates td {
+    text-align: left;
+    padding-left: 1%;
+    column-span: 3;
+    cursor: pointer;
+}
+
+.updates p,
+li {
+    cursor: default;
+}
+
+.updates tr {
+    background-color: #292929;
+}
+
+.updates tr:nth-child(even) {
+    background-color: #343434;
+}
+
+.search-filter {
+    width: 50%;
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-end;
+}
+
+.filters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    margin-bottom: 0.5rem;
+}
+
+.filter {
+    display: inline-flex;
+    align-items: center;
+    background-color: #343434;
+    border: 1px solid #8e4dea;
+    border-radius: 5px;
+    padding: 0.25rem 0.18rem 0.25rem 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.filter-remove {
+    display: inline-block;
+    background-color: transparent;
+    border: none;
+    color: #999;
+    font-size: 1rem;
+    margin-left: 0.25rem;
+    cursor: pointer;
+}
+
+.side-details h4,
+p {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 4rem;
+}
+
+.version-details {
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    -ms-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.version-details td {
+    cursor: default;
+}
+
+.updates .versions-error {
+    width: 100%;
+    background-color: #343434;
+}

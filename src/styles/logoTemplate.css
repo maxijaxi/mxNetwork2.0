@@ -1,0 +1,21 @@
+.logoTemp-Wrapper {
+    display: flex;
+    z-index: 1;
+    flex-direction: row;
+    align-items: center;
+    margin-inline: 1rem;
+}
+
+/*.logoTemp {}*/
+
+.logoTemp img {
+    user-select: none;
+    height: clamp(1.4rem, 2.5vh, 8rem);
+    width: auto;
+    margin: 0.2rem;
+}
+
+.logoTemp-Wrapper h4 {
+    font-size: clamp(1.4rem, 2.5vh, 8rem);
+    color: #949494;
+}

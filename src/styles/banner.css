@@ -1,0 +1,16 @@
+.banner {
+    z-index: -2;
+    height: 100%;
+    position: relative;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%);
+    user-select: none;
+    object-fit: cover;
+}
+
+.banner-wrapper {
+    height: 76vh;
+    height: 76svh;
+    width: 100%;
+}

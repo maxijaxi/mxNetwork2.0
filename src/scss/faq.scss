@@ -1,0 +1,117 @@
+.faq-big {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem 0;
+
+    .faq-header {
+        margin-bottom: 0.6rem;
+
+        p {
+            margin: 0.4rem 0;
+            font-size: 0.8rem;
+            color: #fff;
+            font-family: Arial, Helvetica, sans-serif !important;
+        }
+    }
+
+    h2 {
+
+        font-size: 2rem;
+        color: #fff;
+        font-family: Arial, Helvetica, sans-serif !important;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+        color: #fff;
+        margin-bottom: 0.6rem;
+        font-family: Arial, Helvetica, sans-serif !important;
+    }
+
+    .faq-section-wrap {
+        width: 100%;
+    }
+
+
+    .faq {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: clamp(20rem, 80%, 60rem);
+        margin: 0 0 5rem 0;
+        color: #fff;
+
+        button {
+            padding: 0.5rem;
+            font-size: 1rem;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            background-color: #8e4dea;
+            cursor: pointer;
+            transition: background-color 0.2s ease-in-out;
+            font-family: Arial, Helvetica, sans-serif !important;
+        }
+
+        button:hover {
+            background-color: #6e2fbb;
+        }
+
+        .faq-item {
+            background-color: #292929;
+            border-inline: 0.08rem solid #8e4dea;
+            border-bottom: 0.08rem solid #8e4dea;
+            border-radius: 0;
+            width: 100%;
+        }
+
+        .faq-item:first-of-type {
+            border-radius: 5px 5px 0 0;
+            border: 0.08rem solid #8e4dea;
+        }
+
+        .faq-item:last-of-type {
+            border-radius: 0 0 5px 5px;
+        }
+
+        .faq-question {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: calc(100% - 2rem);
+            padding: 1rem;
+            cursor: pointer;
+        }
+
+        .question-text {
+            font-size: 1.4rem;
+            user-select: none;
+            font-family: Arial, Helvetica, sans-serif !important;
+        }
+
+        .faq-answer {
+            -webkit-transition: height 0.3s ease-in-out;
+            transition: height 0.3s ease-in-out;
+            border-top: 1px solid #383838;
+            padding: 0;
+            font-size: 1rem;
+            height: 0;
+            overflow: hidden;
+            font-family: Arial, Helvetica, sans-serif !important;
+
+
+            a {
+                color: #8e4dea;
+                font-size: 1rem;
+                font-family: Arial, Helvetica, sans-serif !important;
+            }
+
+            &.open {
+                -webkit-transition: height 0.3s ease-in-out;
+                transition: height 0.3s ease-in-out;
+                height: auto;
+            }
+        }
+    }
+}

@@ -1,0 +1,85 @@
+.LogoTemp-Container {
+    height: calc(20vh - 1.6rem);
+    display: flex;
+    margin-inline: clamp(1rem, 20%, 20rem);
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+section {
+    margin-top: 0.8rem;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+section .vert-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+section .vert-content p {
+    font-size: 1.4rem;
+}
+
+section .vert-content h2 {
+    font-size: 2rem;
+}
+
+section .vert-content button {
+    padding: 0.5rem;
+    font-size: 1rem;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    background-color: #8e4dea;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+section .vert-content button:hover {
+    background-color: #6e2fbb;
+}
+
+section .vert-line-top {
+    width: 50%;
+    align-self: flex-end;
+    margin: 5rem;
+}
+
+section .vert-line {
+    position: relative;
+    isolation: isolate;
+    padding: 5rem;
+    display: flex;
+    justify-content: center;
+}
+
+section .vert-line div {
+    width: 60%;
+}
+
+section .vert-line h2 {
+    font-size: 3rem;
+}
+
+section .vert-line p {
+    font-size: 2rem;
+}
+
+section .vert-line::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    background-image: linear-gradient(90.4deg, #8e4dea 0.06%, rgb(75, 0, 140));
+    transform: skewY(8deg);
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.25);
+}
+
+section .vert-line-bottom {
+    width: 60%;
+    align-self: flex-start;
+    margin: 5rem;
+}

@@ -1,0 +1,80 @@
+.newsletter-signup {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #292929;
+    padding: 10px;
+    border-radius: 5px;
+
+    h3 {
+        padding: 0;
+        margin: 1rem 0 1.8rem 0;
+        color: #fff;
+        align-self: center;
+        font-family: Arial, Helvetica, sans-serif !important;
+    }
+
+    .response {
+        min-width: 100%;
+
+        p {
+            align-self: center;
+            text-align: center;
+            width: auto;
+            background-color: #6e2fbbab;
+            padding: 6px 8px;
+            border: 1px solid #8e4dea;
+            border-radius: 5px;
+            margin: 10px 0 0 0;
+            word-wrap: break-word;
+        }
+    }
+
+    form {
+        align-self: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 10px;
+
+        label {
+            color: #fff;
+        }
+
+        .input-row {
+            min-width: max-content;
+        }
+
+        .response {
+            max-width: min-content;
+        }
+
+        input {
+            padding: 8px;
+            border: none;
+            border-radius: 5px 0 0 5px;
+            font-size: 16px;
+        }
+
+        input:focus {
+            outline: none;
+        }
+
+        button {
+            background-color: #8e4dea;
+            color: #fff;
+            border: none;
+            border-radius: 0 5px 5px 0;
+            padding: 0.5rem;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.2s ease-in-out;
+        }
+
+        button:hover {
+            background-color: #6e2fbb;
+        }
+    }
+}

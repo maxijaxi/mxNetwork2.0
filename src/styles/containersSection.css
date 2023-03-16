@@ -1,0 +1,33 @@
+section .wrapper {
+    background-color: #292929;
+    border: 1px solid #8e4dea;
+    border-radius: 6px;
+    box-shadow: 6px 8px 10px #8e4deaaf;
+    padding: 20px;
+    color: white;
+    text-align: left;
+}
+
+section .wrapper h2 {
+    font-size: 1.8rem;
+    margin: 0 0 1.4rem 0;
+}
+
+/*section .wrapper .content {}*/
+
+section .wrapper .content p {
+    font-size: 1.4rem;
+    margin: 0.8rem 0 0.8rem 0;
+}
+
+.contentLink {
+    color: #8e4dea;
+}
+
+.contentLinkNA {
+    color: #8e4dea;
+}
+
+.contentLinkNA:active {
+    color: red;
+}

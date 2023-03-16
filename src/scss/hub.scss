@@ -1,0 +1,298 @@
+.LogoTemp-Container {
+    height: calc(20vh - 1.6rem);
+    display: flex;
+    margin-inline: clamp(1rem, 20%, 20rem);
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.hub {
+    section {
+        margin-top: 0.8rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+
+
+        .vert-content {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+
+        .vert-content p {
+            font-size: 1.4rem;
+            color: #fff;
+            font-family: Arial, Helvetica, sans-serif !important;
+        }
+
+        .vert-content h2 {
+            color: #fff;
+            font-size: 2rem;
+            font-family: Arial, Helvetica, sans-serif !important;
+        }
+
+        .vert-content button {
+            padding: 0.5rem;
+            font-size: 1rem;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            background-color: #8e4dea;
+            cursor: pointer;
+            transition: background-color 0.2s ease-in-out;
+            font-family: Arial, Helvetica, sans-serif !important;
+        }
+
+        .vert-content button:hover {
+            background-color: #6e2fbb;
+        }
+
+        .vert-line-top {
+            width: 50%;
+            align-self: flex-end;
+            margin: 5rem;
+        }
+
+        .vert-line {
+            position: relative;
+            isolation: isolate;
+            padding: 5rem 5rem 8rem 5rem;
+            display: flex;
+            justify-content: center;
+        }
+
+        .vert-line div {
+            width: 60%;
+        }
+
+        .vert-line h2 {
+            font-size: 3rem;
+            font-family: Arial, Helvetica, sans-serif !important;
+        }
+
+        .vert-line p {
+            font-size: 2rem;
+            font-family: Arial, Helvetica, sans-serif !important;
+        }
+
+        .vert-line::after {
+            content: '';
+            position: absolute;
+            z-index: -1;
+            inset: 0;
+            background-image: linear-gradient(90.4deg, #8e4dea 0.06%, rgb(75, 0, 140));
+            transform: skewY(8deg);
+            box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.25);
+        }
+
+        .vert-line-bottom {
+            width: 50%;
+            align-self: flex-start;
+            margin: 5rem;
+        }
+
+        .faq {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            width: clamp(20rem, 80%, 60rem);
+            margin: 0 0 5rem 0;
+            color: #fff;
+
+            h2 {
+                font-size: 2rem;
+                color: #fff;
+                margin: 1rem 0;
+                font-family: Arial, Helvetica, sans-serif !important;
+            }
+
+            a {
+                font-size: 1rem;
+                color: #8e4dea;
+                margin: 1rem 0;
+            }
+
+            button {
+                padding: 0.5rem;
+                font-size: 1rem;
+                color: #fff;
+                border: none;
+                border-radius: 5px;
+                background-color: #8e4dea;
+                cursor: pointer;
+                transition: background-color 0.2s ease-in-out;
+                font-family: Arial, Helvetica, sans-serif !important;
+            }
+
+            button:hover {
+                background-color: #6e2fbb;
+            }
+
+            .faq-item {
+                background-color: #292929;
+                border-inline: 0.08rem solid #8e4dea;
+                border-bottom: 0.08rem solid #8e4dea;
+                border-radius: 0;
+                width: 100%;
+            }
+
+            .faq-item:first-of-type {
+                border-radius: 5px 5px 0 0;
+                border: 0.08rem solid #8e4dea;
+            }
+
+            .faq-item:last-of-type {
+                border-radius: 0 0 5px 5px;
+            }
+
+            .faq-question {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                width: calc(100% - 2rem);
+                padding: 1rem;
+                cursor: pointer;
+            }
+
+            .question-text {
+                font-size: 1.4rem;
+                user-select: none;
+                font-family: Arial, Helvetica, sans-serif !important;
+            }
+
+            .faq-answer {
+                -webkit-transition: height 0.3s ease-in-out;
+                transition: height 0.3s ease-in-out;
+                border-top: 1px solid #383838;
+                padding: 0;
+                font-size: 1rem;
+                height: 0;
+                overflow: hidden;
+                font-family: Arial, Helvetica, sans-serif !important;
+
+
+                a {
+                    color: #8e4dea;
+                    font-size: 1rem;
+                    font-family: Arial, Helvetica, sans-serif !important;
+                }
+
+                &.open {
+                    -webkit-transition: height 0.3s ease-in-out;
+                    transition: height 0.3s ease-in-out;
+                    height: auto;
+                }
+            }
+        }
+    }
+}
+
+$mobile: 576px;
+$tablet: 796px;
+
+@media (max-width: $mobile) {
+    .LogoTemp-Container {
+        display: none;
+    }
+
+    .hub {
+        section {
+            margin-top: 0.8rem;
+            display: flex;
+            justify-content: center;
+            width: 100%;
+
+            .vert-content {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+            }
+
+            .vert-content p {
+                font-size: 1.2rem;
+                align-self: center;
+            }
+
+            .vert-content h2 {
+                font-size: 1.8rem;
+            }
+
+            .vert-content button {
+                padding: 0.5rem;
+                font-size: 1rem;
+                float: right;
+                margin-right: 4rem;
+            }
+
+            .vert-line-top {
+                width: calc(100% - 4rem);
+                align-self: center;
+                margin: 2rem 2rem 4rem 2rem;
+            }
+
+            .vert-line {
+                position: relative;
+                isolation: isolate;
+                padding: 4rem 2rem 6rem 2rem;
+                display: flex;
+                justify-content: center;
+            }
+
+            .vert-line div {
+                width: 100%;
+            }
+
+            .vert-line h2 {
+                font-size: 2.8rem;
+            }
+
+            .vert-line p {
+                font-size: 1.8rem;
+            }
+
+            .vert-line::after {
+                content: '';
+                position: absolute;
+                z-index: -1;
+                inset: 0;
+                background-image: linear-gradient(90.4deg, #8e4dea 0.06%, rgb(75, 0, 140));
+                transform: skewY(8deg);
+                box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.25);
+            }
+
+            .vert-line-bottom {
+                width: calc(100% - 4rem);
+                align-self: center;
+                margin: 3rem 2rem 4rem 2rem;
+            }
+
+            .faq {
+                width: calc(100% - 4rem);
+                p {
+                    font-size: 1.2rem;
+                    align-self: center;
+                }
+    
+                h2 {
+                    font-size: 1.8rem;
+                    margin: 1rem 0;
+                }
+    
+                a {
+                    font-size: 1.2rem;
+                    margin: 1rem 0;
+                }
+
+                button {
+                    padding: 0.5rem;
+                    font-size: 1rem;
+                    margin-right: 4rem;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: $mobile) and (max-width: $tablet) {}
