@@ -29,19 +29,19 @@ function Hub() {
   return (
     <div className="hub">
       <div>
-        <Banner url="https://server.maxijaxi.net/images/banner.jpg" />
+        <Banner url="/images/banner.jpg" />
         <div className="LogoTemp-Container">
           <LogoTemp
             name="mxNetwork"
-            adress="https://server.maxijaxi.net/images/mxGrayLogo.png"
+            adress="/images/mxGrayLogo.png"
           />
           <LogoTemp
             name="mxCloud"
-            adress="https://server.maxijaxi.net/images/mxGrayLogo.png"
+            adress="/images/mxGrayLogo.png"
           />
           <LogoTemp
             name="mxDiscord"
-            adress="https://server.maxijaxi.net/images/mxGrayLogo.png"
+            adress="/images/mxGrayLogo.png"
           />
         </div>
         <section>

@@ -18,7 +18,7 @@ function MobileNavbar() {
       <div className="wrapper">
         <div className="logo-wrapper">
           <Link to="/" className="logo" onClick={Mtoggle}>
-            <img src="https://server.maxijaxi.net/images/mxnLogo.png" alt="" />
+            <img src="/images/mxnLogo.png" alt="" />
             mxNetwork
           </Link>
         </div>

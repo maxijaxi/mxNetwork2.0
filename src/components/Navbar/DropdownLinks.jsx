@@ -146,17 +146,18 @@ const DropLinks = () => {
         <div>
           <h3>Development</h3>
           <div className="dropdown-container">
-            <Link
-              to="/issues"
+          <a
+              href="https://mxnetwork1.statuspage.io/"
               className="items"
+              rel="noreferrer"
+              target="_blank"
               onClick={() => {
                 toggle();
                 Mtoggle();
               }}
-              style={{ color: "red" }}
             >
-              Issues tracker
-            </Link>
+              Service Status
+            </a>
             <br />
             <Link
               to="/dev/resources"

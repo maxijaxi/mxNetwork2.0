@@ -15,7 +15,7 @@ function About() {
   useKeywords("This, is, test"); 
   return (
     <div>
-      <SmallBanner url="https://server.maxijaxi.net/images/smallBanner.jpg" />
+      <SmallBanner url="/images/smallBanner.jpg" />
       <section>
         <div className="grid-wrapper">
           <Container name="About me" id="aboutMe" className="about-container">

@@ -3,7 +3,7 @@
     "short_name": "mxN",
     "icons": [
         {
-            "src": "https://server.maxijaxi.net/images/mxnLogo.png",
+            "src": "/images/mxnLogo.png",
             "sizes": "500x500",
             "type": "image/png"
         }
