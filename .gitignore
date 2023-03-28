@@ -1,6 +1,5 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
-#  keys
 # awsConfig.js
 src/javascripts/awsConfig.js
 
@@ -15,6 +14,7 @@ src/javascripts/awsConfig.js
 # production
 /build
 /dist
+/backup
 
 # misc
 .DS_Store
