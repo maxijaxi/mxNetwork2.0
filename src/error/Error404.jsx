@@ -20,6 +20,12 @@ function Error404() {
     "We searched high and low, but the page you're looking for seems to have vanished into thin air.",
     "Looks like you stumbled into the wrong neighborhood. This page doesn't exist.",
     "Houston, we have a problem. The page you're looking for is lost in space.",
+    "We couldn't find the page you were looking for. Perhaps it's hiding behind the sofa?",
+    "This page has gone missing. We're sending out a search party!",
+    "Error 404: Page not found. It might have run away from home.",
+    "Sorry, this page is currently unavailable. We're working to fix the issue!",
+    "This page seems to be taking a nap. Try again later?",
+    "We've misplaced the page you're looking for. Our apologies!",
   ];
 
   const randomErrorText =
