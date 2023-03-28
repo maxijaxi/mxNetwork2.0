@@ -234,17 +234,16 @@ const DropLinks = () => {
               Events
             </Link>
             <br />
-            <Link
-              to="/"
+            <a
+              href="https://summer.maxijaxi.net/"
               className="items"
               onClick={() => {
                 toggle();
                 Mtoggle();
               }}
-              style={{ color: "gray" }}
             >
-              [unreleased]
-            </Link>
+              SummerServer
+            </a>
             <br />
             <Link
               to="/"

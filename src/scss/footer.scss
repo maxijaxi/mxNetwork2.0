@@ -1,65 +1,151 @@
 footer {
     background-color: #1a1a1a;
-    height: 40vh;
+    height: fit-content;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-}
 
-footer h3 {
-    color: white;
-    padding-left: 0.4rem;
-}
 
-.socials {}
+    h3 {
+        padding: 0.2rem 0.6rem 0.2rem 0.6rem;
+        font-size: 1.4rem;
+        color: #fff;
+    }
 
-.linksWrapper {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    height: 100%;
-}
+    .socials {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
 
-.linksContainer {
-    display: flex;
-    flex-direction: column;
-    margin: 2rem;
-    border-left: 1px solid lightgray;
-    padding-left: 2rem;
-    margin-inline: 2rem;
-}
+        .social-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px 0;
+        }
 
-.linksContainer:first-of-type {
-    border-left: none;
-    padding-left: 0;
-    margin-left: 0;
-}
+        .icon {
+            margin: 0 10px;
+            font-size: 1.5rem;
+            color: gray;
+            transition: color 0.3s ease-in-out;
+        }
 
-.links {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    height: 100%;
-}
+        .icon:hover {
+            color: #8e4dea;
+        }
 
-.links a {
-    text-decoration: none;
-    color: gray;
-    padding: 0.2rem 0.4rem;
+        .copyright p {
+            font-size: 14px;
+            color: darkgray;
+        }
+    }
+
+
+    .linksWrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        height: 100%;
+
+        .linksContainer {
+            display: flex;
+            flex-direction: column;
+            margin: 2rem;
+            border-left: 1px solid lightgray;
+            padding-left: 2rem;
+            margin-inline: 2rem;
+            min-height: 100%;
+        }
+
+        .linksContainer:first-of-type {
+            border-left: none;
+            padding-left: 0;
+            margin-left: 0;
+        }
+
+        .links {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            gap: 1.4rem;
+        }
+
+        .links:first-of-type {
+            margin-top: 0.5rem;
+        }
+
+        .links a {
+            text-decoration: none;
+            color: gray;
+            padding: 0.2rem 0.4rem;
+            font-size: 1.1rem;
+        }
+    }
 }
 
 $mobile: 576px;
 $tablet: 796px;
-$desktop: 1098px;
+$desktop: 1298px;
 
 @media (max-width: $tablet) {
     footer {
-        display: none;
+        background-color: #1a1a1a;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .socials {
+            padding: 2rem 0;
+            border-bottom: 1px solid lightgray;
+        }
+
+        .linksWrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            .linksContainer {
+                border-left: none;
+                padding-left: 0;
+                margin-left: 0;
+                height: auto;
+            }
+
+            .links {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                gap: 1.4rem;
+            }
+
+            .links:first-of-type {
+                margin-top: 0.5rem;
+            }
+
+            .links a {
+                font-size: 1.1rem;
+                text-decoration: none;
+                color: gray;
+                padding: 0.2rem 0.4rem;
+            }
+        }
     }
 }
 
 @media (min-width: $tablet) and (max-width: $desktop) {
     footer {
-        display: none;
+        background-color: #1a1a1a;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .socials {
+            padding-top: 2rem;
+        }
     }
 }
