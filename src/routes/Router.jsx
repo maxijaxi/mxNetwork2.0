@@ -1,9 +1,6 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 
-//! DELETE:
-import NewAbout from "../pages/newabout";
-
 // Main Pages "./"
 import Hub from "../pages/Hub";
 import About from "../pages/About";
@@ -44,8 +41,6 @@ import Error404 from "../error/Error404.jsx";
 function Router() {
   return (
     <Routes>
-      <Route path="/newabout" element={<NewAbout />} />
-
       <Route index element={<Hub />} />
       <Route path="/" element={<Hub />} />
       <Route path="/home" element={<Hub />} />

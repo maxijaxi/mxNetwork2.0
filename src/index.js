@@ -4,13 +4,13 @@ import App from "./App";
 import ReactGA from "react-ga4";
 import { hotjar } from "react-hotjar";
 
-//-- Google Analytics 4
+// Google Analytics 4
 ReactGA.initialize("G-MQ8RHH8CBE");
 
-//-- Hotjar
+// Hotjar
 hotjar.initialize(3403749, 6);
 
-//-- Register Service Worker
+// Register Service Worker
 if ("serviceWorker" in navigator) {
   window.addEventListener("load", function () {
     navigator.serviceWorker.register("/sw.js").then(
