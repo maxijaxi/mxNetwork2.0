@@ -1,6 +1,9 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 
+//! DELETE:
+import NewAbout from "../pages/newabout";
+
 // Main Pages "./"
 import Hub from "../pages/Hub";
 import About from "../pages/About";
@@ -26,7 +29,7 @@ import Blog from "../pages/Blog/Blog";
 // !Dev "./dev/"
 import Resources from "../pages/dev/Resources";
 import Articles from "../pages/dev/Articles";
-import Form from "../pages/dev/Form";
+import Form from "../pages/Form/Form";
 
 // Legal Pages "./legal/"
 import Privacy from "../pages/legal/Privacy";
@@ -41,6 +44,8 @@ import Error404 from "../error/Error404.jsx";
 function Router() {
   return (
     <Routes>
+      <Route path="/newabout" element={<NewAbout />} />
+
       <Route index element={<Hub />} />
       <Route path="/" element={<Hub />} />
       <Route path="/home" element={<Hub />} />
@@ -61,9 +66,10 @@ function Router() {
 
       <Route path="/blog" element={<Blog />} />
 
+      <Route path="/form" element={<Form />} />
+
       <Route path="/dev/resources" element={<Resources />} />
       <Route path="/dev/articles" element={<Articles />} />
-      <Route path="/dev/form" element={<Form />} />
 
       <Route path="/legal/privacy" element={<Privacy />} />
       <Route path="/legal/cookies" element={<Cookies />} />

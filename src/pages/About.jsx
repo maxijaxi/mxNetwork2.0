@@ -87,7 +87,7 @@ function About() {
             <div>
               <h3>mxDiscord</h3>
               <aside>
-                <img src="https://maxijaxi.net/mxdLogo.png" alt="" />
+                <img src="https://maxijaxi.net/mxdLogo.svg" alt="" />
               </aside>
               <p>
                 The mxDiscord is the newest of these three projects. In fact, it

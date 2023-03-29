@@ -1,14 +1,34 @@
 {
     "name": "mxNetwork",
-    "short_name": "mxN",
+    "short_name": "mxNetwork",
+    "start_url": ".",
+    "display": "standalone",
+    "theme_color": "#1a1a1a",
+    "background_color": "#202020",
+    "orientation": "portrait",
+    "description": "Welcome to the mxNetwork - your gateway to a world of creativity and innovation!",
     "icons": [
+        {
+            "src": "/images/mxnLogo.svg",
+            "sizes": "500x500",
+            "type": "image/svg+xml"
+        },
+        {
+            "src": "/images/mxnLogo512.svg",
+            "sizes": "512x512",
+            "type": "image/svg+xml"
+        },
         {
             "src": "/images/mxnLogo.png",
             "sizes": "500x500",
-            "type": "image/png"
+            "type": "image/png",
+            "purpose": "maskable"
+        },
+        {
+            "src": "/images/mxnLogo512.svg",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable"
         }
-    ],
-    "theme_color": "#1a1a1a",
-    "background_color": "#202020",
-    "display": "standalone"
+    ]
 }

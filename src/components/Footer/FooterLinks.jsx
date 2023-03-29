@@ -49,7 +49,7 @@ const FooterLinks = () => {
             Blog
           </Link>
           <Link
-            to="/dev/form"
+            to="/form"
             onClick={() => {
               toggle();
             }}
@@ -136,7 +136,7 @@ const FooterLinks = () => {
         </div>
       </div>
       <div className="linksContainer">
-        <h3>Projects<br />& Services</h3>
+        <h3>Projects</h3>
         <div className="links">
           <a
             href="https://mxnetwork1.statuspage.io/"

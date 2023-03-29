@@ -33,15 +33,15 @@ function Hub() {
         <div className="LogoTemp-Container">
           <LogoTemp
             name="mxNetwork"
-            adress="/images/mxGrayLogo.png"
+            adress="/images/mxGrayLogo.svg"
           />
           <LogoTemp
             name="mxCloud"
-            adress="/images/mxGrayLogo.png"
+            adress="/images/mxGrayLogo.svg"
           />
           <LogoTemp
             name="mxDiscord"
-            adress="/images/mxGrayLogo.png"
+            adress="/images/mxGrayLogo.svg"
           />
         </div>
         <section>

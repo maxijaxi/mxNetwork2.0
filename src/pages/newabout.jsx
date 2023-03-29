@@ -21,8 +21,11 @@ function About() {
   };
   return (
     <div className="about-me">
+      <div className="about-header">
+        <h2>Creativity. Fresh. Dark. Stylish. This is mxNetwork.</h2>
+      </div>
       <div>
-        
+
       </div>
     </div>
   );

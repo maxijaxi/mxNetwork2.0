@@ -17,7 +17,7 @@ function Navbar() {
       <div className="wrapper">
         <div className="logo-wrapper">
           <Link to="/" className="logo" onClick={toggle}>
-            <img src="/images/mxnLogo.png" alt="" />
+            <img src="/images/mxnLogo.svg" alt="" />
             mxNetwork
           </Link>
         </div>

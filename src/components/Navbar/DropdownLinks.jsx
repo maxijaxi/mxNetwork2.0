@@ -57,7 +57,7 @@ const DropLinks = () => {
             </Link>
             <br />
             <Link
-              to="/dev/form"
+              to="/form"
               className="items"
               onClick={() => {
                 toggle();
