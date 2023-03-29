@@ -151,12 +151,12 @@ function About() {
           <img
             src="/images/mxcLogo.svg"
             alt="mxCloud Logo"
-            style={{ alignSelf: "start", justifySelf: "start" }}
+            className="img-start"
           />
           <img
             src="/images/mxdLogo.svg"
             alt="mxDiscord Logo"
-            style={{ alignSelf: "end", justifySelf: "end" }}
+            className="img-end"
           />
         </div>
       </section>
