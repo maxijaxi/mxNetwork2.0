@@ -1,0 +1,437 @@
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem 0;
+    width: 100%;
+
+    button {
+        margin-top: 1rem;
+        padding: 0.5rem;
+        font-size: 1rem;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        background-color: #8e4dea;
+        cursor: pointer;
+        transition: background-color 0.2s ease-in-out;
+        font-family: Arial, Helvetica, sans-serif !important;
+    }
+
+    button:hover {
+        background-color: #6e2fbb;
+    }
+
+    h3 {
+        font-size: 1.8rem;
+        color: #fff;
+        margin: 1.6rem 0 1.4rem 0;
+        font-family: Arial, Helvetica, sans-serif !important;
+    }
+
+    p {
+        margin: 0.4rem 0;
+        font-size: 1.4rem;
+        color: #fff;
+        font-family: Arial, Helvetica, sans-serif !important;
+    }
+
+    .about-head {
+        width: 80%;
+
+        h2 {
+            font-size: 2rem;
+            color: #fff;
+            font-family: Arial, Helvetica, sans-serif !important;
+        }
+
+        h2 span {
+            letter-spacing: 2px;
+            display: inline;
+            font-size: 4rem;
+            color: #e4d4fb;
+            text-shadow: 0 0 0.6rem #8e4dea, 0 0 1.5rem #6a00b6,
+                -0.2rem 0.1rem 1rem #6a00b6, 0.2rem 0.1rem 1rem #6a00b6,
+                0 -0.5rem 2rem #3b0080, 0 0.5rem 3rem #3b0080;
+            animation: shine 2s forwards, flicker 3s infinite;
+        }
+
+        .flicker {
+            animation: shine 2s forwards, blink 3s 2s infinite;
+        }
+
+        .fast-flicker {
+            animation: shine 2s forwards, blink 10s 1s infinite;
+        }
+
+    }
+
+    section {
+        margin-top: 2rem;
+        width: 80%;
+        display: grid;
+        grid: auto-flow / 1fr 1fr 1fr;
+        grid-column-gap: 1rem;
+        grid-row-gap: 4rem;
+
+        .container {
+            width: 100%;
+            grid-column: span 2;
+        }
+
+        img {
+            width: auto;
+            height: clamp(200px, 20vw, 300px);
+            align-self: center;
+            justify-self: center;
+        }
+
+        .round-image {
+            border-radius: 50%;
+        }
+
+        .projects-img {
+            display: flex;
+
+            img {
+                width: auto;
+                height: clamp(100px, 20vw, 160px);
+            }
+
+            .img-start {
+                justify-self: flex-start;
+                align-self: flex-start;
+            }
+
+            .img-end {
+                justify-self: flex-end;
+                align-self: flex-end;
+            }
+        }
+    }
+}
+
+// Neon effect
+
+@keyframes blink {
+
+    0%,
+    22%,
+    36%,
+    75% {
+        color: #8e4dea;
+        text-shadow: 0 0 0.6rem #8e4dea, 0 0 1.5rem #6a00b6,
+            -0.2rem 0.1rem 1rem #6a00b6, 0.2rem 0.1rem 1rem #6a00b6,
+            0 -0.5rem 2rem #3b0080, 0 0.5rem 3rem #3b0080;
+    }
+
+    28%,
+    33% {
+        color: #6a00b6;
+        text-shadow: none;
+    }
+
+    82%,
+    97% {
+        color: #3b0080;
+        text-shadow: none;
+    }
+}
+
+@keyframes shine {
+    0% {
+        color: #4a186b;
+        text-shadow: none;
+    }
+
+    100% {
+        color: #d4bdf4;
+        text-shadow: 0 0 0.6rem #8e4dea, 0 0 1.5rem #6a00b6,
+            -0.2rem 0.1rem 1rem #6a00b6, 0.2rem 0.1rem 1rem #6a00b6,
+            0 -0.5rem 2rem #3b0080, 0 0.5rem 3rem #3b0080;
+    }
+}
+
+@keyframes flicker {
+    from {
+        opacity: 1;
+    }
+
+    4% {
+        opacity: 0.9;
+    }
+
+    6% {
+        opacity: 0.85;
+    }
+
+    8% {
+        opacity: 0.95;
+    }
+
+    10% {
+        opacity: 0.9;
+    }
+
+    11% {
+        opacity: 0.922;
+    }
+
+    12% {
+        opacity: 0.9;
+    }
+
+    14% {
+        opacity: 0.95;
+    }
+
+    16% {
+        opacity: 0.98;
+    }
+
+    17% {
+        opacity: 0.9;
+    }
+
+    19% {
+        opacity: 0.93;
+    }
+
+    20% {
+        opacity: 0.99;
+    }
+
+    24% {
+        opacity: 1;
+    }
+
+    26% {
+        opacity: 0.94;
+    }
+
+    28% {
+        opacity: 0.98;
+    }
+
+    37% {
+        opacity: 0.93;
+    }
+
+    38% {
+        opacity: 0.5;
+    }
+
+    39% {
+        opacity: 0.96;
+    }
+
+    42% {
+        opacity: 1;
+    }
+
+    44% {
+        opacity: 0.97;
+    }
+
+    46% {
+        opacity: 0.94;
+    }
+
+    56% {
+        opacity: 0.9;
+    }
+
+    58% {
+        opacity: 0.9;
+    }
+
+    60% {
+        opacity: 0.99;
+    }
+
+    68% {
+        opacity: 1;
+    }
+
+    70% {
+        opacity: 0.9;
+    }
+
+    72% {
+        opacity: 0.95;
+    }
+
+    93% {
+        opacity: 0.93;
+    }
+
+    95% {
+        opacity: 0.95;
+    }
+
+    97% {
+        opacity: 0.93;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/*.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem 0;
+    width: 100%;
+
+    button {
+        margin-top: 1rem;
+        padding: 0.5rem;
+        font-size: 1rem;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        background-color: #8e4dea;
+        cursor: pointer;
+        transition: background-color 0.2s ease-in-out;
+        font-family: Arial, Helvetica, sans-serif !important;
+    }
+
+    button:hover {
+        background-color: #6e2fbb;
+    }
+
+    h3 {
+        font-size: 1.8rem;
+        color: #fff;
+        margin: 1.6rem 0 1.4rem 0;
+        font-family: Arial, Helvetica, sans-serif !important;
+    }
+
+    p {
+        margin: 0.4rem 0;
+        font-size: 1.4rem;
+        color: #fff;
+        font-family: Arial, Helvetica, sans-serif !important;
+    }
+
+    .about-head {
+        width: 80%;
+
+        h2 {
+            font-size: 2rem;
+            color: #fff;
+            font-family: Arial, Helvetica, sans-serif !important;
+        }
+
+        h2 span {
+            letter-spacing: 2px;
+            display: inline;
+            font-size: 4rem;
+            color: #e4d4fb;
+            text-shadow: 0 0 0.6rem #8e4dea, 0 0 1.5rem #6a00b6,
+                -0.2rem 0.1rem 1rem #6a00b6, 0.2rem 0.1rem 1rem #6a00b6,
+                0 -0.5rem 2rem #3b0080, 0 0.5rem 3rem #3b0080;
+            animation: shine 2s forwards, flicker 3s infinite;
+        }
+
+        .flicker {
+            animation: shine 2s forwards, blink 3s 2s infinite;
+        }
+
+        .fast-flicker {
+            animation: shine 2s forwards, blink 10s 1s infinite;
+        }
+
+    }
+
+    section {
+        margin-top: 2rem;
+        width: 80%;
+        display: grid;
+        grid: auto-flow / 1fr 1fr 1fr;
+        grid-column-gap: 1rem;
+        grid-row-gap: 4rem;
+
+        .container {
+            width: 100%;
+
+            grid-column: span 2;
+
+            div {
+                width: 70%;
+            }
+        }
+
+        img {
+            width: auto;
+            height: clamp(200px, 20vw, 300px);
+            align-self: center;
+            justify-self: center;
+        }
+
+        .round-image {
+            border-radius: 50%;
+        }
+
+        .projects-img {
+            display: flex;
+
+            img {
+                width: auto;
+                height: clamp(100px, 20vw, 160px);
+            }
+        }
+    }
+}*/
+
+$mobile: 576px;
+$tablet: 796px;
+
+@media (max-width: $tablet) {
+    .about {
+        .about-head {
+            width: calc(100% - 4rem);
+
+            h2 span {
+                font-size: 3rem;
+            }
+        }
+
+        section {
+            width: calc(100% - 4rem);
+            grid: auto-flow / 1fr 1fr;
+
+            .container {
+                width: 100%;
+                grid-column: span 2;
+            }
+
+            img {
+                grid-column: span 2;
+            }
+
+            .projects-img {
+                display: flex;
+                grid-column: span 2;
+                justify-content: space-around;
+                
+                img {
+                    width: auto;
+                    height: clamp(100px, 20vw, 160px);
+                }
+
+                .img-start {
+                    justify-self: unset;
+                    align-self: unset;
+                }
+
+                .img-end {
+                    justify-self: unset;
+                    align-self: unset;
+                }
+            }
+        }
+    }
+}
