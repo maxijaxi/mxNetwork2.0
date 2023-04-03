@@ -8,7 +8,13 @@ function Banner(props) {
   return (
     <div>
       <div className="banner-wrapper">
-        <img src={props.url} alt="" className="banner" />
+        <img
+          src={props.url}
+          alt=""
+          rel="preload"
+          as="image"
+          className="banner"
+        />
       </div>
       <GlitchText />
     </div>

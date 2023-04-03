@@ -145,7 +145,7 @@ function NewsletterSignup() {
 
   return (
     <div className="newsletter-signup">
-      <h3>Newsletter Sign-up</h3>
+      <h3 id="newsletter">Newsletter Sign-up</h3>
       <form onSubmit={handleSubmit}>
         <label htmlFor="email-input">Enter your email:</label>
         <div className="input-row">

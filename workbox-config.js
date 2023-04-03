@@ -15,3 +15,5 @@ module.exports = {
     },
   ],
 };
+
+//! cmd: npx workbox generateSW workbox-config.js

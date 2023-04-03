@@ -8,7 +8,7 @@ import useKeywords from "../hooks/useKeywords";
 
 import "../scss/about.scss";
 
-//! MAKE BUTTON LINKS AND PAGES 
+//! MAKE BUTTON LINKS AND PAGES
 // TODO HTML OLD MXNET
 
 function About() {
@@ -55,6 +55,9 @@ function About() {
             power of mxNetwork today!
           </p>
           <div style={{ display: "flex", gap: "0.4rem" }}>
+            <a href="#newsletter">
+              <button>Join us</button>
+            </a>
             <Link to="" onClick={toggle}>
               <button>Old mxNetwork</button>
             </Link>
@@ -91,7 +94,7 @@ function About() {
             <Link to="/thisIs/mx/profile" onClick={toggle}>
               <button>My Profile</button>
             </Link>
-            <a 
+            <a
               href="https://maxijaxi.net/"
               rel="noreferrer"
               target="_blank"
@@ -125,9 +128,6 @@ function About() {
           <div style={{ display: "flex", gap: "0.4rem" }}>
             <Link to="/projects" onClick={toggle}>
               <button>Projects</button>
-            </Link>
-            <Link to="/updates" onClick={toggle}>
-              <button>Updates</button>
             </Link>
             <a
               href="https://cloud.maxijaxi.net"
