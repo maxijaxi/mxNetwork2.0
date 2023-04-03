@@ -54,7 +54,7 @@ function Hub() {
                 mxNetwork and maxijaxi.net.
               </p>
               <p>
-                Currently, I'm 17 years old and live in Vienna, Austria, as a
+                Currently, I'm 18 years old and live in Vienna, Austria, as a
                 student in my final year. I enjoy spending my free time playing
                 video games and programming stuff, though I don't have a lot of
                 time due to school.

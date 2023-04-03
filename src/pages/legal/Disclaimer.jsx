@@ -5,7 +5,7 @@ import useDesc from "../../hooks/useDesc";
 import useKeywords from "../../hooks/useKeywords";
 
 function Disclaimer() {
-  useTitle("Hub");
+  useTitle("Disclaimer");
   useDesc(
     "Read our website's disclaimer to understand the limitations of liability and warranties for the information provided on our website."
   );

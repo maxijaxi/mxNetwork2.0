@@ -46,6 +46,7 @@ function About() {
             needed a major upgrade. Not only did it look terrible on certain
             screen sizes, but its poor performance was also holding it back.
           </p>
+          <br />
           <p>
             That's why I decided to create mxNetwork 2.0 - a sleek,
             high-performance website with cutting-edge features, animations, and
@@ -95,7 +96,7 @@ function About() {
               <button>My Profile</button>
             </Link>
             <a
-              href="https://maxijaxi.net/"
+              href="https://mschuster.dev/"
               rel="noreferrer"
               target="_blank"
               onClick={toggle}
@@ -117,6 +118,7 @@ function About() {
             security and capacity issues, I am committed to delivering a
             top-quality product. Keep an eye out for updates!
           </p>
+          <br />
           <p>
             Another project I'm working on is mxDiscord. This project is still
             in its early stages of development, but I'm excited about its

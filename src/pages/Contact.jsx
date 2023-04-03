@@ -4,9 +4,20 @@ import { DropdownContext } from "../contexts/dropdownContext";
 
 import { GoogleMap, LoadScript } from "@react-google-maps/api";
 
+import useTitle from "../hooks/useTitle";
+import useDesc from "../hooks/useDesc";
+import useKeywords from "../hooks/useKeywords";
+
 import "../scss/contact.scss";
 
 function Contact() {
+  useTitle("Contact");
+  useDesc(
+    "Contact us!"
+  );
+  useKeywords(
+    "contact, whois, email"
+  );
   const { setClick } = useContext(DropdownContext);
 
   const toggle = () => {

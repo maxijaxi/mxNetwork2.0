@@ -94,7 +94,6 @@ const FooterLinks = () => {
             onClick={() => {
               toggle();
             }}
-            style={{ color: "red" }}
           >
             Profile
           </Link>

@@ -1,0 +1,97 @@
+.maxis {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem 0;
+    width: 100%;
+
+    button {
+        margin-top: 1rem;
+        padding: 0.5rem;
+        font-size: 1rem;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        background-color: #8e4dea;
+        cursor: pointer;
+        transition: background-color 0.2s ease-in-out;
+        font-family: Arial, Helvetica, sans-serif !important;
+    }
+
+    button:hover {
+        background-color: #6e2fbb;
+    }
+
+    h2 {
+        font-size: 2rem;
+        margin: 1.6rem 0 1.4rem 0;
+        color: #fff;
+        font-family: Arial, Helvetica, sans-serif !important;
+    }
+
+    h3 {
+        font-size: 1.8rem;
+        color: #fff;
+        margin: 1.6rem 0 1.4rem 0;
+        font-family: Arial, Helvetica, sans-serif !important;
+    }
+
+    p,
+    ul {
+        margin: 0.4rem 0;
+        font-size: 1.4rem;
+        color: #fff;
+        font-family: Arial, Helvetica, sans-serif !important;
+    }
+
+    ul {
+        line-height: 1.5;
+    }
+
+    img {
+        width: auto;
+        height: clamp(200px, 20vw, 300px);
+        align-self: center;
+        justify-self: center;
+        border-radius: 50%;
+    }
+
+    iframe {
+        width: 100%;
+        height: auto;
+    }
+
+    .header {
+        width: 80%;
+    }
+
+    .maxis-part {
+        width: 80%;
+
+        .about-me {
+            display: grid;
+            grid: auto-flow / 1fr 1fr 1fr;
+            grid-column-gap: 1rem;
+            grid-row-gap: 4rem;
+
+            .about-text {
+                width: 100%;
+                grid-column: span 2;
+            }
+        }
+
+        .skills-wrap {
+            display: grid;
+            grid: auto-flow / 1fr 1fr;
+            grid-column-gap: 1rem;
+            grid-row-gap: 4rem;
+
+            .skill-grid {
+                display: grid;
+                grid: auto-flow / 1fr 1fr;
+                grid-column-gap: 1rem;
+                grid-row-gap: 1rem;
+            }
+        }
+    }
+}

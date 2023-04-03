@@ -90,7 +90,6 @@ const DropLinks = () => {
                 toggle();
                 Mtoggle();
               }}
-              style={{ color: "red" }}
             >
               Profile
             </Link>
