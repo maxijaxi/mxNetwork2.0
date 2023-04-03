@@ -1,18 +1,37 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 
 import "../scss/mxMe/skillBar.scss";
 
 const SkillBar = (props) => {
   const { name, percentage, color } = props;
   const [width, setWidth] = useState(0);
+  const skillBarRef = useRef(null);
+
+  const onIntersection = (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        setWidth(percentage);
+      }
+    });
+  };
 
   useEffect(() => {
-    const timer = setTimeout(() => {
-      setWidth(percentage);
-    }, 100);
+    const observer = new IntersectionObserver(onIntersection, {
+      root: null,
+      rootMargin: "0px",
+      threshold: 0.1,
+    });
 
-    return () => clearTimeout(timer);
-  }, [percentage]);
+    if (skillBarRef.current) {
+      observer.observe(skillBarRef.current);
+    }
+
+    return () => {
+      if (skillBarRef.current) {
+        observer.unobserve(skillBarRef.current);
+      }
+    };
+  }, [percentage, skillBarRef]);
 
   const isGradient = color.includes("gradient");
 

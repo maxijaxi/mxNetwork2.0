@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from "react";
+import "../styles/YouTubeEmbed.css";
 
 const YouTubeEmbed = () => {
   const ifmRef = useRef(null);
@@ -22,6 +23,7 @@ const YouTubeEmbed = () => {
   return (
     <iframe
       ref={ifmRef}
+      className="responsive-iframe"
       style={{ border: "none", width: "100%" }}
       scrolling="no"
       src="https://www.youtube.com/embed/7NK_JOkuSVY"

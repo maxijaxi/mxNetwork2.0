@@ -59,6 +59,7 @@
     iframe {
         width: 100%;
         height: auto;
+        cursor: pointer;
     }
 
     .header {
@@ -91,6 +92,34 @@
                 grid: auto-flow / 1fr 1fr;
                 grid-column-gap: 1rem;
                 grid-row-gap: 1rem;
+            }
+        }
+    }
+}
+
+
+$mobile: 576px;
+$tablet: 796px;
+
+@media (max-width: $tablet) {
+    .maxis {
+        .header {
+            width: calc(100% - 4rem);
+        }
+
+        .maxis-part {
+            width: calc(100% - 4rem);
+
+            .about-me {
+                grid: auto-flow / 1fr;
+
+                .about-text {
+                    grid-column: span 1;
+                }
+            }
+
+            .skills-wrap {
+                grid: auto-flow / 1fr;
             }
         }
     }

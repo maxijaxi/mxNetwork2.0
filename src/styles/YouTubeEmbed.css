@@ -1,0 +1,16 @@
+.responsive-iframe {
+    max-width: 100%;
+    height: calc(100vw * (9 / 16));
+}
+
+@media screen and (min-width: 768px) {
+    .responsive-iframe {
+        height: calc(50vw * (9 / 16));
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .responsive-iframe {
+        height: calc(35vw * (9 / 16));
+    }
+}
