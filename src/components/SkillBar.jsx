@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 
 import "../scss/mxMe/skillBar.scss";
 
@@ -7,31 +7,20 @@ const SkillBar = (props) => {
   const [width, setWidth] = useState(0);
   const skillBarRef = useRef(null);
 
-  const onIntersection = (entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
+  useEffect(() => {
+    const checkIfInView = () => {
+      const skillBarContainer = skillBarRef.current;
+      const top = skillBarContainer.getBoundingClientRect().top;
+      const bottom = skillBarContainer.getBoundingClientRect().bottom;
+
+      if (top >= 0 && bottom <= window.innerHeight) {
         setWidth(percentage);
       }
-    });
-  };
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(onIntersection, {
-      root: null,
-      rootMargin: "0px",
-      threshold: 0.1,
-    });
-
-    if (skillBarRef.current) {
-      observer.observe(skillBarRef.current);
-    }
-
-    return () => {
-      if (skillBarRef.current) {
-        observer.unobserve(skillBarRef.current);
-      }
     };
-  }, [percentage, skillBarRef]);
+
+    window.addEventListener("scroll", checkIfInView);
+    return () => window.removeEventListener("scroll", checkIfInView);
+  }, [percentage]);
 
   const isGradient = color.includes("gradient");
 
@@ -46,7 +35,7 @@ const SkillBar = (props) => {
         <h4>{name}</h4>
         <strong>{percentage}%</strong>
       </div>
-      <div className="skillBarContainer">
+      <div className="skillBarContainer" ref={skillBarRef}>
         <div className="skillBarFill" style={skillBarStyle} />
       </div>
     </div>
