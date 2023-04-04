@@ -111,7 +111,6 @@ const FooterLinks = () => {
             onClick={() => {
               toggle();
             }}
-            style={{ color: "red" }}
           >
             Feedback
           </Link>

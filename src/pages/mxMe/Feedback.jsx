@@ -1,15 +1,27 @@
-import React from "react";
+import React, { useState } from "react";
+import FeedbackForm from "../../components/Feedback/FeedbackForm";
+import FeedbackList from "../../components/Feedback/FeedbackList";
 
-import Error404 from "../../error/Error404";
+import "../../scss/mxMe/Feedback.scss";
 
-// TODO connect components
+const Feedback = () => {
+  const [newFeedback, setNewFeedback] = useState(null);
 
-function Feedback() {
+  const handleFeedbackSubmitted = (feedback) => {
+    setNewFeedback(feedback);
+  };
+
   return (
-    <div>
-      <Error404 />
+    <div className="feedback-wrapper">
+      <div className="feedback">
+        <h2>Feedback</h2>
+        <FeedbackForm onFeedbackSubmitted={handleFeedbackSubmitted} />
+        <div className="feedback-list">
+          <FeedbackList onNewFeedback={newFeedback} />
+        </div>
+      </div>
     </div>
   );
-}
+};
 
 export default Feedback;
