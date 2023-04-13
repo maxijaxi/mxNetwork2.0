@@ -60,10 +60,10 @@ function About() {
               <button>Join us</button>
             </a>
             <Link to="" onClick={toggle}>
-              <button>Old mxNetwork</button>
+              <button className="secondary-button">Old mxNetwork</button>
             </Link>
             <Link to="/thisIs/mx/feedback" onClick={toggle}>
-              <button>Feedback</button>
+              <button className="secondary-button">Feedback</button>
             </Link>
           </div>
         </div>
@@ -101,11 +101,16 @@ function About() {
               target="_blank"
               onClick={toggle}
             >
-              <button>My Portfolio</button>
+              <button className="secondary-button">My Portfolio</button>
             </a>
-            <Link to="/thisIs/mx/services" onClick={toggle}>
-              <button>My Services</button>
-            </Link>
+            <a
+              href="https://shop.maxijaxi.net"
+              rel="noreferrer"
+              target="_blank"
+              onClick={toggle}
+            >
+              <button className="secondary-button">My Services</button>
+            </a>
           </div>
         </div>
         <div className="container">
@@ -137,7 +142,15 @@ function About() {
               target="_blank"
               onClick={toggle}
             >
-              <button style={{ backgroundColor: "#4dbec2" }}>mxCloud</button>
+              <button
+                className="secondary-button"
+                style={{
+                  border: "2px solid #4dbec2",
+                  backgroundColor: "transparent",
+                }}
+              >
+                mxCloud
+              </button>
             </a>
             <a
               href="https://discord.maxijaxi.net"
@@ -145,7 +158,15 @@ function About() {
               target="_blank"
               onClick={toggle}
             >
-              <button style={{ backgroundColor: "#5865F2" }}>mxDiscord</button>
+              <button
+                className="secondary-button"
+                style={{
+                  border: "2px solid #5865F2",
+                  backgroundColor: "transparent",
+                }}
+              >
+                mxDiscord
+              </button>
             </a>
           </div>
         </div>

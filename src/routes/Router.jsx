@@ -13,7 +13,6 @@ import Contact from "../pages/Contact";
 // ? "./" ist vllt besser?
 // mxMe "./thisIs/mx/"
 import ProfileMe from "../pages/mxMe/ProfileMe";
-import Services from "../pages/mxMe/Services";
 import Feedback from "../pages/mxMe/Feedback";
 // !mxMe social "./thisIs/mx/social/"
 import Social from "../pages/mxMe/social/Social";
@@ -52,7 +51,6 @@ function Router() {
       <Route path="/contact" element={<Contact />} />
 
       <Route path="/thisIs/mx/profile" element={<ProfileMe />} />
-      <Route path="/thisIs/mx/services" element={<Services />} />
       <Route path="/thisIs/mx/feedback" element={<Feedback />} />
 
       <Route path="/thisIs/mx/social" element={<Social />} />

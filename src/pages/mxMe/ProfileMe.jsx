@@ -55,8 +55,8 @@ function ProfileMe() {
               >
                 <button>My Portfolio</button>
               </a>
-              <Link to="/thisIs/mx/services" onClick={toggle}>
-                <button>My Services</button>
+              <Link to="/thisIs/mx/social" onClick={toggle}>
+                <button className="secondary-button">Find me online</button>
               </Link>
             </div>
           </div>
@@ -76,6 +76,24 @@ function ProfileMe() {
               <li>Operating Systems</li>
               <li>Networking</li>
             </ul>
+            <div style={{ display: "flex", gap: "0.4rem" }}>
+              <a
+                href="https://shop.maxijaxi.net"
+                rel="noreferrer"
+                target="_blank"
+                onClick={toggle}
+              >
+                <button>My Services</button>
+              </a>
+              <a
+                href="https://github.com/maxijaxi"
+                rel="noreferrer"
+                target="_blank"
+                onClick={toggle}
+              >
+                <button className="secondary-button">My GitHub</button>
+              </a>
+            </div>
           </div>
           <div>
             <div className="skill-grid">

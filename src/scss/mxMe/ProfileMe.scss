@@ -22,6 +22,25 @@
         background-color: #6e2fbb;
     }
 
+    .secondary-button {
+        margin-top: 1rem;
+        padding: calc(0.5rem - 2px);
+        font-size: 1rem;
+        color: #fff;
+        border: 2px solid #8e4dea;
+        border-radius: 5px;
+        background-color: transparent;
+        cursor: pointer;
+        transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+        font-family: Arial, Helvetica, sans-serif !important;
+
+        &:hover {
+            background-color: #212121;
+            color: #fff;
+            border-color: #6e2fbb;
+        }
+    }
+
     h2 {
         font-size: 2rem;
         margin: 1.6rem 0 1.4rem 0;
