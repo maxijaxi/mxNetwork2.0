@@ -104,7 +104,7 @@ function About() {
               <button className="secondary-button">My Portfolio</button>
             </a>
             <a
-              href="https://shop.maxijaxi.net"
+              href="https://www.upwork.com/freelancers/maxis"
               rel="noreferrer"
               target="_blank"
               onClick={toggle}

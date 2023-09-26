@@ -78,7 +78,7 @@ function ProfileMe() {
             </ul>
             <div style={{ display: "flex", gap: "0.4rem" }}>
               <a
-                href="https://shop.maxijaxi.net"
+                href="https://www.upwork.com/freelancers/maxis"
                 rel="noreferrer"
                 target="_blank"
                 onClick={toggle}
