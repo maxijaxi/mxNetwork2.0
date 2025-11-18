@@ -145,7 +145,7 @@ const DropLinks = () => {
           <h3>Development</h3>
           <div className="dropdown-container">
           <a
-              href="https://mxnetwork1.statuspage.io/"
+              href="https://mxnetwork.statuspage.io/"
               className="items"
               rel="noreferrer"
               target="_blank"
