@@ -6,7 +6,7 @@ import "../../scss/info-container/container.scss";
 const StatusEmbed = () => {
   return (
     <Helmet>
-      <script src="https://mxnetwork1.statuspage.io/embed/script.js" />
+      <script src="https://mxnetwork.statuspage.io/embed/script.js" />
     </Helmet>
   );
 };
