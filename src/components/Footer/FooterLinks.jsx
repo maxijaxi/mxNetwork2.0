@@ -137,7 +137,7 @@ const FooterLinks = () => {
         <h3>Projects</h3>
         <div className="links">
           <a
-            href="https://mxnetwork1.statuspage.io/"
+            href="https://mxnetwork.statuspage.io/"
             rel="noreferrer"
             target="_blank"
             onClick={() => {
